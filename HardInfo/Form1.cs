@@ -21,7 +21,7 @@ namespace HardInfo
         private void GetHardWareInfo(string key,ListView list)
         {
             list.Items.Clear();
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM" + key);
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM " + key);
             try
             {
                 foreach (ManagementObject obj in searcher.Get())
